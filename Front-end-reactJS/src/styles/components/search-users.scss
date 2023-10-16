@@ -1,0 +1,19 @@
+.search__form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    &_firstName--input, &_lastName--input {
+        padding: 0.5rem 0.7rem;
+        border: none;
+        background-color: antiquewhite;
+    }
+
+    &_submitBtn {
+        @include button-forms-styles;
+
+        &:hover {
+            @include button-forms-styles-hover;
+        }
+    }
+}

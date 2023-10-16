@@ -1,0 +1,35 @@
+.user__form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    &_firstName, &_lastName, &_email  {
+        display: flex;
+        flex-direction: column;
+        gap: 0.3rem;        
+    }
+
+    &_firstName--label, &_lastName--label, &_email--label{
+        font-weight: 500;
+    }
+
+    &_firstName--input, &_lastName--input, &_email--input{
+        background-color: lightgoldenrodyellow;
+        border: none;
+    }
+    
+    &_submitBtn {
+        padding: 0.5rem 0.7rem;
+        background-color: aquamarine;
+        font-size: 1.3rem;
+        font-weight: 700;
+        border: none;
+        border-radius: 0.5rem;
+        transition: all 0.3s ease-in-out;
+
+        &:hover {
+            background-color: rgb(0, 41, 27);
+            color: lightgoldenrodyellow;
+        }
+    }
+}

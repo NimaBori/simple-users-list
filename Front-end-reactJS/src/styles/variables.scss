@@ -1,0 +1,21 @@
+// SCSS variables 
+@mixin button-forms-styles {
+    padding: 0.5rem 0.7rem;
+        background-color: aquamarine;
+        font-size: 1.3rem;
+        font-weight: 700;
+        border: none;
+        border-radius: 0.5rem;
+        transition: all 0.3s ease-in-out;
+}
+
+@mixin button-forms-styles-hover {
+    background-color: rgb(0, 41, 27);
+    color: lightgoldenrodyellow;
+}
+
+@mixin media-xs {
+    @media screen and (max-width: 810px) {
+      @content
+    }
+  }
